@@ -28,7 +28,9 @@
 ## Data types
 
 - 論理値(`true` and `false`)と論理型(`bool`)
-        (1 < 2) = false
+
+    (1 < 2) = false
+
 - 文字と文字型(`char`)
         'a'
 - 文字列と文字列型(`string`)
