@@ -10,20 +10,43 @@
 
 ## Basics
 
-- 式
-        1+2*3
-- 名前の導入(`let`)、浮動小数点数
-        let pi = 4.0 *. atan 1.0
-- 関数の定義
-        let square x = x *. x
-- 関数呼び出しと標準関数(*sin*, *cos*)
-        square (sin pi) +. square (cos pi)
-- 型検査の失敗
-        1.0 * 2
-- 再帰的関数も簡単(`let rec`)
-        let rec fib n =
-          if n < 2 then n else fib (n-1) + fib (n-2)
-          fib 10
+式
+
+```
+1+2*3
+```
+
+名前の導入(`let`)、浮動小数点数
+
+```
+let pi = 4.0 *. atan 1.0
+```
+
+関数の定義
+
+```
+let square x = x *. x
+```
+
+関数呼び出しと標準関数(*sin*, *cos*)
+
+```
+square (sin pi) +. square (cos pi)
+```
+
+型検査の失敗
+
+```
+1.0 * 2
+```
+
+再帰的関数も簡単(`let rec`)
+
+```
+let rec fib n =
+  if n < 2 then n else fib (n-1) + fib (n-2)
+  fib 10
+```
 
 ## Data types
 
