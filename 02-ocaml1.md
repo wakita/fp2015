@@ -223,3 +223,26 @@ let rec insert x btree =
       if x <= y then Node(y, insert x left, right)
                 else Node(y, left, insert x right)
 ```
+
+-----
+
+# 課題1: 木の扱い
+
+`btree`型の木について、深さを与える関数`depth`を定義しなさい。
+
+# 課題2: Gray code
+
+*n*-bitのGray codeは以下のように定められている。この規則性を見つけ、gray関数を定義しなさい。
+
+gray 0 = []
+gray 1 = [[0], [1]]
+gray 2 = [[0, 0], [0, 1], [1, 1], [1, 0]]
+gray 3 = [[0, 0, 0], [0, 0, 1], [0, 1, 1], [0, 1, 0], [1, 1, 0], [1, 1, 1], [1, 0, 1], [1, 0, 0]]
+
+# 課題3: every2
+
+`btree`に登録された`'a`型の値のうち、小さいものから奇数番目のものを小さい順に並べたリストを与える関数`every2`を定義しなさい。
+
+```
+every2: 'a btree -> 'a list
+```
