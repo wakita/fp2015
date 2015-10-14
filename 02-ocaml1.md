@@ -226,6 +226,8 @@ let rec insert x btree =
 
 -----
 
+`assignment1.ml`というファイルに以下の課題の答を記述し、OCW-i を介して提出しなさい。〆切はOCW-iに記載する。
+
 # 課題1: 木の扱い
 
 `btree`型の木について、深さを与える関数`depth`を定義しなさい。
