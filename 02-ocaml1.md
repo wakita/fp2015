@@ -228,13 +228,19 @@ let rec insert x btree =
 
 `assignment1.ml`というファイルに以下の課題の答を記述し、OCW-i を介して提出しなさい。〆切はOCW-iに記載する。
 
-# 課題1: 木の扱い
+Question should be addressed on [a Github issue page](https://github.com/wakita/fp2015/issues/1) (you need a Github account to do so).
+
+# Assignment 1: Tree manipulation
 
 `btree`型の木について、深さを与える関数`depth`を定義しなさい。
+
+Give a definition of a function `depth` that takes a `btree`-typed tree and gives its depth.
 
 # 課題2: Gray code
 
 *n*-bitのGray codeは以下のように定められている。この規則性を見つけ、gray関数を定義しなさい。
+
+A sequence of the *n*-bit gray code is illustrated below.  Figure out the rule that generates this sequence and describe in OCaml.
 
 gray 0 = []
 gray 1 = [[0]; [1]]
@@ -243,7 +249,9 @@ gray 3 = [[0; 0; 0]; [0; 0; 1]; [0; 1; 1]; [0; 1; 0]; [1; 1; 0]; [1; 1; 1]; [1; 
 
 # 課題3: every2
 
-`btree`に登録された`'a`型の値のうち、小さいものから奇数番目のものを小さい順に並べたリストを与える関数`every2`を定義しなさい。
+`btree`に登録された`'a`型の値のうち、小さいものから奇数番目のものを小さい順に並べたリストを与える関数`every2`を定義しなさい。木に登録された値は相異なるものと仮定してよい．
+
+Define a function named `every2` that takes a tree of `'a bteee` and gives a list that consists of the odd positions of the tree leaves.
 
 ```
 every2: 'a btree -> 'a list
