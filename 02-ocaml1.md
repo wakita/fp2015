@@ -249,7 +249,7 @@ Give a definition of a function `depth` that takes a `btree`-typed tree and give
 
 A sequence of the *n*-bit gray code is illustrated below.  Figure out the rule that generates this sequence and describe in OCaml.
 
-gray 0 = []
+gray 0 = [[]]
 gray 1 = [[0]; [1]]
 gray 2 = [[0; 0]; [0; 1]; [1; 1]; [1; 0]]
 gray 3 = [[0; 0; 0]; [0; 0; 1]; [0; 1; 1]; [0; 1; 0]; [1; 1; 0]; [1; 1; 1]; [1; 0; 1]; [1; 0; 0]]
